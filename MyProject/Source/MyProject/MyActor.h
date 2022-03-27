@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MyActorComponent.h"	// 반드시 generated.h 위에서 include 선언해야 함
 #include "MyActor.generated.h"
 
 UCLASS()
@@ -23,4 +24,5 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UMyActorComponent* component;
 };
